@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<!-- Meta Tags -->
+<meta name="Description" content="<{$xoops_meta_description}>" />
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="keywords" content="<{$xoops_pagetitle}>,<{$xoops_meta_keywords}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="<{$smarty.const.META_GENER}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="revisit-after" content="<{$smarty.const.META_REV_AFT}>" />
+<meta http-equiv="Refresh" content="<{$time}>; url=<{$url}>" />
+<link rel="stylesheet" type="text/css" media="all" href="<{xoImgUrl reset.css}>" />
+<link rel="stylesheet" type="text/css" media="all" href="<{xoImgUrl text.css}>" />
+<link rel="stylesheet" type="text/css" media="all" href="<{xoImgUrl 960.css}>" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{xoImgUrl style.css}>" title="default" />
+
+<title><{$xoops_sitename}><{if $xoops_pagetitle !=''}> - <{$xoops_pagetitle}><{/if}></title>
+</head>
+
+<body>
+<div class="wrapper">
+	<div id="spotlight">
+		<div class="container_12">
+			<div id="s_blocktitle" class="grid_12"><h2>Message</h2></div>
+			<div id="s_tabtitle" class="grid_12">
+				<ul class="s_tabs">
+					<li><a href="#"><{$xoops_pagetitle}></a></li>
+				</ul>
+			</div>
+			<div class="grid_12">
+				<div id="s_content_message" class="s_content">
+					<h2><{$message}></h2>
+					<p><img src="<{xoImgUrl img/indicator.gif}>"></p>
+					<p><{$lang_ifnotreload}></p>
+					<{if $xoops_logdump != ''}><p><{$xoops_logdump}></p><{/if}>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+</body>
+</html>
